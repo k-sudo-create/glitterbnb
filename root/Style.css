@@ -16,7 +16,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: var(--glitter-dark);
-    background: radial-gradient(circle at 20% 20%, rgba(247,182,210,0.15), transparent 40%), radial-gradient(circle at 80% 30%, rgba(199,164,255,0.15), transparent 40%), radial-gradient(circle at 50% 90%, rgba(247,182,210,0.1), transparent 40%), #ffffff;
+    background-color: #fff0f8; /* soft pink base */
+    background-image: radial-gradient(circle at 20% 20%, rgba(247,182,210,0.15), transparent 40%), radial-gradient(circle at 80% 30%, rgba(199,164,255,0.15), transparent 40%), radial-gradient(circle at 50% 90%, rgba(247,182,210,0.1), transparent 40%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -26,7 +30,7 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-    header h1 { 
+    header h1 {
         text-align: center;
         letter-spacing: 2px;
         text-transform: uppercase;
