@@ -232,3 +232,61 @@ footer {
     border: 1px;
     display: block;
 }
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+    .social-links a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--glitter-purple);
+        position: relative;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+        .social-links a:hover {
+            color: #d87fa1; /* rose gold shimmer on hover */
+            transform: scale(1.1);
+        }
+
+        .social-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0%;
+            height: 2px;
+            background: var(--sparkle);
+            transition: width 0.3s ease;
+        }
+
+        .social-links a:hover::after {
+            width: 100%;
+        }
+
+
+
+a.btn {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0.8rem 2rem;
+    background: var(--sparkle);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    a.btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
