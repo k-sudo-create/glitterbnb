@@ -1,28 +1,33 @@
-﻿* {
+﻿/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Root colors */
 :root {
     --glitter-pink: #f7b6d2;
-    --glitter-purple: #c7a4ff;
+    --glitter-purple: #a05cff; /* darker purple for contrast */
     --glitter-silver: #f4f4f4;
-    --glitter-dark: #2b2b2b;
+    --glitter-dark: #1a1a1a; /* darker for readability */
     --sparkle: linear-gradient(120deg, #f7b6d2, #ffffff, #c7a4ff, #ffffff, #f7b6d2);
+    --focus-color: #ff7ffb; /* bright color for focus outlines */
 }
 
+/* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: var(--glitter-dark);
-    background-color: #fff0f8; /* soft pink base */
+    background-color: #fff0f8;
     background-image: radial-gradient(circle at 20% 20%, rgba(247,182,210,0.15), transparent 40%), radial-gradient(circle at 80% 30%, rgba(199,164,255,0.15), transparent 40%), radial-gradient(circle at 50% 90%, rgba(247,182,210,0.1), transparent 40%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* Header */
 header {
     background: var(--sparkle);
     padding: 1.8rem;
@@ -34,8 +39,10 @@ header {
         text-align: center;
         letter-spacing: 2px;
         text-transform: uppercase;
+        color: var(--glitter-dark);
     }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -49,8 +56,10 @@ nav a {
     font-weight: bold;
     color: var(--glitter-dark);
     position: relative;
+    padding: 0.2rem;
 }
 
+    /* Hover + focus styles for links */
     nav a::after {
         content: "";
         position: absolute;
@@ -67,6 +76,14 @@ nav a {
         width: 100%;
     }
 
+/* Make focus visible for keyboard users */
+a:focus,
+button:focus {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 3px;
+}
+
+/* Main content */
 main {
     max-width: 1100px;
     margin: auto;
@@ -83,6 +100,7 @@ h2 {
     font-size: 1.8rem;
 }
 
+/* Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -108,6 +126,7 @@ img {
     border-radius: 8px;
 }
 
+/* Forms */
 label {
     font-weight: bold;
     margin-top: 1rem;
@@ -125,12 +144,15 @@ textarea {
 
     input:focus,
     textarea:focus {
-        outline: none;
         border-color: var(--glitter-purple);
         box-shadow: 0 0 6px rgba(199,164,255,0.8);
+        outline: 3px solid var(--focus-color);
     }
 
-button {
+/* Buttons */
+button,
+a.btn {
+    display: inline-block;
     margin-top: 1.2rem;
     padding: 0.8rem 2rem;
     background: var(--sparkle);
@@ -140,30 +162,18 @@ button {
     letter-spacing: 1px;
     cursor: pointer;
     border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-    button:hover {
+    button:hover,
+    a.btn:hover {
         transform: scale(1.05);
         box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
 
-footer {
-    background: var(--glitter-silver);
-    padding: 1.5rem;
-    text-align: center;
-    font-size: 0.9rem;
-    border-top: 3px solid var(--glitter-pink);
-}
-
-.pricing-intro {
-    margin-bottom: 2rem;
-    text-align: center;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* Pricing cards */
 .pricing-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -201,36 +211,22 @@ footer {
     .price span {
         font-size: 0.9rem;
         font-weight: normal;
-        color: #8a8a8a;
+        color: #555; /* darker for contrast */
     }
 
-.price-card ul {
-    list-style: none;
-    margin: 1.5rem 0;
-    padding: 0;
-}
-
-.price-card li {
-    margin-bottom: 0.6rem;
-}
-
+/* Featured card */
 .featured {
     border: 3px solid var(--glitter-purple);
     transform: scale(1.05);
 }
 
-.pricing-note {
-    margin-top: 2rem;
+/* Footer */
+footer {
+    background: var(--glitter-silver);
+    padding: 1.5rem;
     text-align: center;
     font-size: 0.9rem;
-    color: #666;
-}
-
-.map {
-    width: 100%;
-    height: 250px;
-    border: 1px;
-    display: block;
+    border-top: 3px solid var(--glitter-pink);
 }
 
 .social-links {
@@ -249,7 +245,7 @@ footer {
     }
 
         .social-links a:hover {
-            color: #d87fa1; /* rose gold shimmer on hover */
+            color: #d87fa1;
             transform: scale(1.1);
         }
 
@@ -264,33 +260,12 @@ footer {
             transition: width 0.3s ease;
         }
 
-        .social-links a:hover::after {
+        .social-links a:hover::after,
+        .social-links a:focus::after {
             width: 100%;
         }
 
-
-
-a.btn {
-    display: inline-block;
-    margin-top: 1.2rem;
-    padding: 0.8rem 2rem;
-    background: var(--sparkle);
-    border: none;
-    color: #000;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-radius: 30px;
-    text-decoration: none;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-    a.btn:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    }
-
+/* Restaurants list */
 .restaurants-list {
     list-style: none;
     padding: 0;
