@@ -290,3 +290,17 @@ a.btn {
         transform: scale(1.05);
         box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
+
+.restaurants-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+    .restaurants-list li {
+        background: #fff;
+        margin-bottom: 0.8rem;
+        padding: 0.8rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
