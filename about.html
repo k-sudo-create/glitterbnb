@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>About Us - Glitter BnB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="root/style.css">
-    <script src="root/java.js" defer></script>
+    <link rel="stylesheet" href="root/style.css?v=3">
 </head>
 <body>
 
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+
     <header>
         <h1>About Glitter BnB</h1>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About & Gallery</a></li>
@@ -20,25 +21,23 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section aria-labelledby="about-heading">
             <h2 id="about-heading">About Us</h2>
             <p>
-                Glitter BnB was designed to create a fun and unique stay in Los Angeles. Each room in our BnB has pink glitter walls including three bedrooms, a living room, kitchen and one bathroom.
-                Our property has an outdoor pool with deck chairs and palm trees. We are passionate about making each guest feel comfortable during their stay and providing an unforgettable and fabulous experience.
+                Glitter BnB offers a fun and unique stay in Los Angeles. Each room has pink walls, including three bedrooms, a living room, a kitchen, and one bathroom.
+                The property includes an outdoor pool with deck chairs and palm trees. We aim to provide every guest with a comfortable and memorable experience.
             </p>
         </section>
 
         <section aria-labelledby="pricing-heading">
             <h2 id="pricing-heading">Our Pricing</h2>
             <p>
-                At Glitter BnB, we offer both a fabulous and unique stay with affordable pricing in mind.
-                If you are planning a weekend getaway or a longer holiday, we offer flexibility to suit your needs.
+                We offer flexible pricing options for weekend getaways or longer stays to suit your needs.
             </p>
 
-            <div class="pricing-cards">
-
-                <div class="price-card">
+            <div class="pricing-cards" role="list">
+                <div class="price-card" role="listitem">
                     <h3>Weekday Stay</h3>
                     <p class="price">$180 <span>/ per night</span></p>
                     <ul>
@@ -50,19 +49,19 @@
                     <a href="contact.html#contactForm" class="btn">Book Now</a>
                 </div>
 
-                <div class="price-card featured">
+                <div class="price-card featured" role="listitem">
                     <h3>Weekend Glam Package</h3>
                     <p class="price">$250 <span>/ per night</span></p>
                     <ul>
                         <li><span aria-hidden="true">✔</span> 3 Bedrooms</li>
                         <li><span aria-hidden="true">✔</span> Pool & Courtyard</li>
-                        <li><span aria-hidden="true">✔</span> Complimentary Sparkle Gift</li>
+                        <li><span aria-hidden="true">✔</span> Complimentary Gift</li>
                         <li><span aria-hidden="true">✔</span> Late Checkout</li>
                     </ul>
                     <a href="contact.html#contactForm" class="btn">Book Now</a>
                 </div>
 
-                <div class="price-card">
+                <div class="price-card" role="listitem">
                     <h3>Weekly Stay</h3>
                     <p class="price">$1100 <span>/ per week</span></p>
                     <ul>
@@ -73,7 +72,6 @@
                     </ul>
                     <a href="contact.html#contactForm" class="btn">Book Now</a>
                 </div>
-
             </div>
 
             <p class="pricing-note">
@@ -83,11 +81,11 @@
 
         <section aria-labelledby="restaurants-heading">
             <h2 id="restaurants-heading">Nearby Restaurants</h2>
-            <p>When staying at Glitter BnB, you'll find a variety of fabulous dining options nearby. Here are five local favorites:</p>
+            <p>Here are five local dining favorites near Glitter BnB:</p>
             <ol class="restaurants-list">
-                <li>Pink Flamingo Café – Cozy brunch spot with glitter-themed décor</li>
-                <li>Sunset Sushi – Fresh sushi with a view of the sunset</li>
-                <li>Glam Burger – Gourmet burgers with fun, sparkling vibes</li>
+                <li>Pink Flamingo Café – Cozy brunch spot with themed décor</li>
+                <li>Sunset Sushi – Fresh sushi with sunset views</li>
+                <li>Glam Burger – Gourmet burgers with sparkling vibes</li>
                 <li>Starry Night Bistro – Elegant dining with live music</li>
                 <li>Sweet Treats Bakery – Delicious pastries and cupcakes</li>
             </ol>
@@ -97,32 +95,32 @@
             <h2 id="gallery-heading">Gallery</h2>
             <div class="gallery">
                 <figure>
-                    <img src="images/bathroom.png" alt="Bathroom with Hollywood-style mirror and pink glitter walls">
-                    <figcaption>Bathroom with a Hollywood-style mirror for a fun environment to get ready in</figcaption>
+                    <img src="images/bathroom.png" alt="Bathroom with Hollywood-style mirror">
+                    <figcaption>Bathroom with Hollywood-style mirror and pink walls</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bedroom.png" alt="Master bedroom with ocean view, pink glitter walls and neon sign">
-                    <figcaption>The master bedroom hosts fabulous views of the ocean, has pink glitter walls and a neon light saying 'stay fabulous'</figcaption>
+                    <img src="images/bedroom.png" alt="Master bedroom with pink walls">
+                    <figcaption>Master bedroom with ocean view and neon 'stay fabulous' sign</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/bedroom2.png" alt="Guest bedroom with double bed and cozy decor">
-                    <figcaption>Guest bedroom with a double bed and a cozy and warm vibe</figcaption>
+                    <img src="images/bedroom2.png" alt="Guest bedroom with double bed">
+                    <figcaption>Guest bedroom with cozy décor</figcaption>
                 </figure>
                 <figure>
                     <img src="images/bedroom3.png" alt="Guest bedroom with courtyard view">
-                    <figcaption>Guest bedroom with a view of the courtyard</figcaption>
+                    <figcaption>Guest bedroom overlooking the courtyard</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/courtyard.png" alt="Courtyard with pool and deck chairs">
-                    <figcaption>Our courtyard has a beautiful pool to cool off in with deckchairs alongside to relax on</figcaption>
+                    <img src="images/courtyard.png" alt="Courtyard with pool">
+                    <figcaption>Courtyard with pool and deck chairs</figcaption>
                 </figure>
                 <figure>
                     <img src="images/kitchen.png" alt="Fully equipped kitchen">
-                    <figcaption>Our kitchen is filled with all the facilities to cook the best meals</figcaption>
+                    <figcaption>Kitchen with all cooking facilities</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/lounge.png" alt="Lounge with glamorous and cozy decor">
-                    <figcaption>Our lounge is a perfect place to relax with glamorous and cozy decor</figcaption>
+                    <img src="images/lounge.png" alt="Lounge area">
+                    <figcaption>Lounge with glamorous and cozy décor</figcaption>
                 </figure>
             </div>
         </section>
@@ -131,9 +129,9 @@
     <footer>
         <p>&copy; 2026 Glitter BnB</p>
         <div class="social-links">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">Instagram</a>
-            <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">TikTok</a>
-            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">Twitter</a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram profile">Instagram</a>
+            <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok profile">TikTok</a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter profile">Twitter</a>
         </div>
     </footer>
 
