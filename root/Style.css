@@ -189,12 +189,12 @@ a.btn {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: #b00059
 }
 
     .price span {
         font-size: 0.9rem;
-        color: #333;
+        color: #222;
     }
 
 .featured {
