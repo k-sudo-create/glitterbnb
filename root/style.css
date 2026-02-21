@@ -8,6 +8,7 @@
     --primary-color: #000000;
     --secondary-color: #ff6f91;
     --accent-color: #f6a5b1;
+    --button-color: #6a2dad;
     --background-color: #fce0e6;
     --background-alt: #ffffff;
     --focus-color: #ff6f91;
@@ -81,10 +82,13 @@ section {
     margin-bottom: 3rem;
 }
 
-h2 {
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
+h2, h3 {
+    color: var(--primary-color);
     font-size: 1.8rem;
+}
+
+h1 {
+    color: var(--primary-color);
 }
 
 .gallery {
@@ -143,7 +147,7 @@ a.btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.8rem 2rem;
-    background-color: var(--secondary-color);
+    background-color: var(--button-color);
     color: var(--background-alt);
     font-weight: bold;
     border-radius: 30px;
@@ -221,7 +225,7 @@ footer {
     }
 
         .social-links a:hover,
-        .social-links a:focus {
+        social-links a:focus {
             color: var(--accent-color);
         }
 
