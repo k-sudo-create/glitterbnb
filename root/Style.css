@@ -5,12 +5,13 @@
 }
 
 :root {
-    --primary-color: #2a2a2a;
-    --secondary-color: #ff7f50;
-    --accent-color: #ffcc00;
-    --background-color: #f3f3f3;
+    --primary-color: #000000;
+    --secondary-color: #ff6f91;
+    --accent-color: #f6a5b1;
+    --button-color: #6a2dad;
+    --background-color: #fce0e6;
     --background-alt: #ffffff;
-    --focus-color: #ff7f50;
+    --focus-color: #ff6f91;
 }
 
 body {
@@ -30,7 +31,7 @@ header {
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: var(--background-color);
+        color: var(--background-alt);
     }
 
 nav ul {
@@ -44,7 +45,7 @@ nav ul {
 nav a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--background-color);
+    color: var(--background-alt);
     padding: 0.2rem;
     position: relative;
 }
@@ -96,7 +97,7 @@ h2 {
 figure {
     border-radius: 12px;
     padding: 0.7rem;
-    background-color: var(--background-color);
+    background-color: var(--background-alt);
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: transform 0.2s ease;
 }
@@ -143,8 +144,8 @@ a.btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.8rem 2rem;
-    background-color: var(--secondary-color);
-    color: var(--background-color);
+    background-color: var(--button-color);
+    color: var(--background-alt);
     font-weight: bold;
     border-radius: 30px;
     text-decoration: none;
