@@ -188,7 +188,7 @@ a.btn {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
     .price span {
