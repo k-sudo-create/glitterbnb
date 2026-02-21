@@ -31,7 +31,7 @@ header {
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: var(--background-alt);
+        color: var(--primary-color);
     }
 
 nav ul {
@@ -82,10 +82,13 @@ section {
     margin-bottom: 3rem;
 }
 
-h2 {
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
+h2, h3 {
+    color: var(--primary-color);
     font-size: 1.8rem;
+}
+
+h1 {
+    color: var(--primary-color);
 }
 
 .gallery {
